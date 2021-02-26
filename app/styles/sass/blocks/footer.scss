@@ -15,6 +15,7 @@
     }
 
     &__logo {
+        display: block;
         img {
             width: 120px;
         }
@@ -33,13 +34,23 @@
         display: flex;
         flex-wrap: wrap;
         font-weight: 700;
-        margin: -5px -15px;
+        margin: 0 -15px;
 
         li {
-            margin: 5px 15px;
+            position: relative;
+            margin: 0 15px;
+            padding: 5px 0;
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: $main;
+            }
         }
     }
 
-    &__btn {
-    }
+    
 }

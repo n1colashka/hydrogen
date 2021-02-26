@@ -1,6 +1,67 @@
 @media (min-width: 1025px) {
    // Hover section
+   .footer {
+      &__list li {
+         &::after {
+            transition: .3s ease;
+         }
 
+         &:hover {
+            &::after {
+               width: 100%;
+            }
+         }
+         
+      }
+   }
+   .header {
+      &__navigation li {
+         &::after {
+            transition: .3s ease;
+         }
+
+         &:hover::after{
+            width: 100%;
+         }
+      }
+   }
+   .btn {
+      transition: .3s ease;
+
+      &:hover {
+         color: #fff;
+         background-color: $blue;
+      }
+
+      &--blue {
+         &:hover {
+            color: $blue;
+            background-color: #fff;
+         }
+      }
+   }
+
+   .btn-arrow {
+      transition: .3s ease;
+
+      svg, path, circle {
+         transition: .3s ease;
+      }
+
+      &:hover {
+         background-color: #fff;
+         color: $main;
+
+         svg {
+            circle {
+               fill: $green;
+            }
+            path {
+               fill: #fff;
+            }
+         }
+      }
+   }
    // Hover section
 }
 

@@ -30,7 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function initAnimations() {
-		AOS.init();
+		AOS.init({
+            duration: 600,
+        });
     }
     
     // initMenu();
