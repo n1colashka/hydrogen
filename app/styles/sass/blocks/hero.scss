@@ -1,10 +1,10 @@
 .hero {
-    background: url('../images/dist/section-bg.jpg') bottom center no-repeat;
+    background: url('../images/dist/hero-bg-full.png') bottom center no-repeat;
     padding-top: 145px;
+    padding-bottom: 510px;
 
     &__inner {
         display: flex;
-        padding-bottom: 100px;
     }
 
     &__content {
@@ -24,14 +24,9 @@
         font-weight: 700;
     }
 
-    &__btn-wrapper {
-    }
-
-    &__btn {
-    }
-
     &__bg {
         position: relative;
+        display: none;
         z-index: 3;
         text-align: center;
         img {
@@ -52,8 +47,8 @@
         &::after {
             position: absolute;
             content: "";
-            right: 0;
-            top: 0;
+            right: 438px;
+            top: 11px;
             width: 195px;
             height: 195px;
             background: url('../images/dist/bg-circles-green.svg') center no-repeat;

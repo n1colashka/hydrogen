@@ -41,30 +41,35 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 44px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 
     &::after {
         position: absolute;
         content: "";
         left: 0;
         bottom: 0;
-        width: 100%;
+        width: 373px;
         height: 6px;
         background-color: $blue;
     }
 }
 
 .title-back {
+    position: absolute;
+    left: 60px;
+    bottom: -25px;
+    z-index: -1;
     font-weight: bold;
     font-size: 144px;
     line-height: 176px;
     color: #fff;
     // -webkit-text-stroke: 1px #828282;
-    text-shadow: 2px 0 0 #828282, -2px 0 0 #828282, 0 2px 0 #828282, 0 -2px 0 #828282, 1px 1px #828282, -1px -1px 0 #828282, 1px -1px 0 #828282, -1px 1px 0 #828282;
+    text-shadow: 1px 0 0 #828282, -1px 0 0 #828282, 0 1px 0 #828282, 0 -1px 0 #828282, 1px 1px #828282, -1px -1px 0 #828282, 1px -1px 0 #828282, -1px 1px 0 #828282;
 }
 
-.subtitle {
-    
+.title-wrapper {
+    position: relative;
+    padding-top: 70px;
 }
 
 .btn-arrow {

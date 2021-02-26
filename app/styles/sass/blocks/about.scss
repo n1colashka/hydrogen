@@ -1,3 +1,85 @@
 .about {
-    padding-top: 120px;
+    padding-top: 140px;
+    padding-bottom: 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 570px;
+        margin-left: 20px;
+    }
+
+    &__title-back {
+        left: 5px;
+        bottom: -57px;
+    }
+
+    &__title-wrapper {
+        padding-top: 0;
+    }
+
+    &__subtitle {
+        color: $green;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 40px;
+        max-width: 465px;
+    }
+
+    &__text {
+        font-style: italic;
+        padding-bottom: 30px;
+        span {
+            color: $green;
+        }
+    }
+
+    &__quote {
+        position: relative;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        background-color: $green;
+        padding: 34px 80px;
+        font-style: italic;
+        font-weight: 700;
+        color: #fff;
+        margin-left: auto;
+        max-width: 865px;
+        margin-top: -40px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 22px;
+            background: url('../images/dist/quotes.svg') center no-repeat;
+        }
+        &::before {
+            left: 15px;
+            bottom: 15px;
+            transform: rotate(180deg);
+        }
+        &::after {
+            top: 15px;
+            right: 15px;
+        }
+        p {
+            margin: 0;
+
+            & + p {
+                margin-top: 30px;
+            }
+        }
+    }
 }
