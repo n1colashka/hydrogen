@@ -1,0 +1,28 @@
+.future {
+    padding-top: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    &__inner {
+        padding-bottom: 220px;
+    }
+
+    &__title-wrapper {
+        margin-bottom: 75px;
+    }
+
+    &__title-back {
+        left: auto;
+        right: 80px;
+        text-align: right;
+    }
+    &__text {
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            margin: 50px 0;
+        }
+    }
+}

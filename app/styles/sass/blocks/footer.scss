@@ -1,0 +1,45 @@
+.footer {
+    padding-bottom: 43px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 33px;
+    }
+
+    &__col {
+        &:first-child {
+            max-width: 300px;
+        }
+    }
+
+    &__logo {
+        img {
+            width: 120px;
+        }
+    }
+
+    &__copy {
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        color: #000;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 700;
+        margin: -5px -15px;
+
+        li {
+            margin: 5px 15px;
+        }
+    }
+
+    &__btn {
+    }
+}
